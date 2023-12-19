@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISPrilozhenie_5Расположение",
+  "modelName": "i-i-s-prilozhenie-5-расположение",
+  "className": "Расположение",
+  "nameSpace": "IIS.Prilozhenie_5",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "адрес",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "РасположениеE",
+      "modelName": "i-i-s-prilozhenie-5-расположение",
+      "attrs": [
+        {
+          "name": "адрес",
+          "caption": "Адрес",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "РасположениеL",
+      "modelName": "i-i-s-prilozhenie-5-расположение",
+      "attrs": [
+        {
+          "name": "адрес",
+          "caption": "Адрес",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

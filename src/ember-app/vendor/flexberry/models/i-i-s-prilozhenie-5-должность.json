@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISPrilozhenie_5Должность",
+  "modelName": "i-i-s-prilozhenie-5-должность",
+  "className": "Должность",
+  "nameSpace": "IIS.Prilozhenie_5",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "idДолжности",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ДолжностьE",
+      "modelName": "i-i-s-prilozhenie-5-должность",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "idДолжности",
+          "caption": "Id должности",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ДолжностьL",
+      "modelName": "i-i-s-prilozhenie-5-должность",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "idДолжности",
+          "caption": "Id должности",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

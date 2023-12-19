@@ -1,0 +1,85 @@
+﻿{
+  "name": "IISPrilozhenie_5Контроллер",
+  "modelName": "i-i-s-prilozhenie-5-контроллер",
+  "className": "Контроллер",
+  "nameSpace": "IIS.Prilozhenie_5",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "idКонтроллера",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "модель",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сенсоры",
+      "relatedTo": "i-i-s-prilozhenie-5-сенсоры",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "серверная",
+      "relatedTo": "i-i-s-prilozhenie-5-серверная",
+      "inverse": "контроллер"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КонтроллерE",
+      "modelName": "i-i-s-prilozhenie-5-контроллер",
+      "attrs": [
+        {
+          "name": "модель",
+          "caption": "Модель",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "idКонтроллера",
+          "caption": "",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сенсоры",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 2,
+          "type": "default",
+          "caption": "",
+          "name": "сенсоры",
+          "relatedTo": "i-i-s-prilozhenie-5-сенсоры",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

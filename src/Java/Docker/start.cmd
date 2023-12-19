@@ -1,0 +1,1 @@
+docker-compose -p prilozhenie_5-java up -d

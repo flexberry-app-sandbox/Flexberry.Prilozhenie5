@@ -1,0 +1,98 @@
+﻿{
+  "name": "IISPrilozhenie_5ОтчетОСервере",
+  "modelName": "i-i-s-prilozhenie-5-отчет-о-сервере",
+  "className": "ОтчетОСервере",
+  "nameSpace": "IIS.Prilozhenie_5",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "режим",
+      "type": "i-i-s-prilozhenie-5-режим-сервера",
+      "flexberryType": "РежимСервера",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "расположение",
+      "relatedTo": "i-i-s-prilozhenie-5-расположение",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "серверная",
+      "relatedTo": "i-i-s-prilozhenie-5-серверная",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОтчетОСервереE",
+      "modelName": "i-i-s-prilozhenie-5-отчет-о-сервере",
+      "attrs": [
+        {
+          "name": "режим",
+          "caption": "Режим",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Расположение",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 1,
+          "type": "default",
+          "caption": "",
+          "name": "расположение",
+          "relatedTo": "i-i-s-prilozhenie-5-расположение",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Серверная",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 2,
+          "type": "default",
+          "caption": "",
+          "name": "серверная",
+          "relatedTo": "i-i-s-prilozhenie-5-серверная",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ОтчетОСервереL",
+      "modelName": "i-i-s-prilozhenie-5-отчет-о-сервере",
+      "attrs": [
+        {
+          "name": "режим",
+          "caption": "Режим",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
